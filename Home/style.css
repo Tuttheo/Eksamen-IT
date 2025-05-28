@@ -1,0 +1,135 @@
+/* Reset some default browser styles for all elements */
+* {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Ensure html and body take full height of the viewport */
+html, body {
+    height: 100%;
+}
+
+/* Style for the body element */
+body {
+    min-height: 100vh; /* Ensure body is at least full viewport height */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange flex items in a column */
+    font-family: Arial, sans-serif; /* Set a default font family */
+    line-height: 1.6; /* Set line height for readability */
+    background-color: #f4f4f4; /* Set a light grey background color */
+}
+
+/* Style for the header element */
+header {
+    background-color: #333; /* Set a dark background color */
+    color: white; /* Set text color to white */
+    text-align: center; /* Center align text within the header */
+    padding: 2rem; /* Add padding around the header content */
+    margin-bottom: 2rem; /* Add bottom margin */
+}
+
+/* Style for the grid container holding the shoe cards */
+.shoe-grid {
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Define grid columns: auto-fit creates as many columns as can fit, minmax sets min/max width */
+    gap: 2rem; /* Set the gap between grid items */
+    padding: 2rem; /* Add padding around the grid */
+    max-width: 1200px; /* Set maximum width for the grid */
+    margin: 0 auto; /* Center the grid horizontally */
+}
+
+/* Style for individual shoe cards */
+.shoe-card {
+    background: white; /* Set white background */
+    border-radius: 8px; /* Apply border radius for rounded corners */
+    overflow: hidden; /* Hide any content that overflows the rounded corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Add a box shadow */
+    transition: transform 0.3s ease; /* Add a smooth transition for transform property */
+}
+
+/* Style for shoe cards on hover */
+.shoe-card:hover {
+    transform: translateY(-5px); /* Lift the card up slightly on hover */
+}
+
+/* Style for images within shoe cards */
+.shoe-card img {
+    width: 100%; /* Make image width fill the container */
+    height: 200px; /* Set a fixed height for images */
+    object-fit: cover; /* Crop and center the image within the container */
+}
+
+/* Style for the main heading within shoe cards */
+.shoe-card h3 {
+    padding: 1rem; /* Add padding around the heading */
+    color: #333; /* Set text color */
+}
+
+/* Style for paragraph text within shoe cards */
+.shoe-card p {
+    padding: 0 1rem; /* Add padding around the paragraph */
+    color: #666; /* Set text color */
+}
+
+/* Style for the container holding buttons and price */
+.button-group {
+    padding: 1rem; /* Add padding around the group */
+    display: flex; /* Use flexbox for layout */
+    gap: 1rem; /* Set the gap between flex items */
+}
+
+/* General style for buttons */
+button {
+    padding: 0.5rem 1rem; /* Add padding to buttons */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Apply border radius */
+    cursor: pointer; /* Change cursor on hover */
+    font-weight: bold; /* Set font weight */
+    transition: background-color 0.3s ease; /* Add smooth transition for background color */
+}
+
+/* Style for the 'Les mer' button */
+.read-more {
+    background-color: #4CAF50; /* Set background color (green) */
+    color: white; /* Set text color to white */
+}
+
+/* Style for the 'Kjøp' button */
+.buy {
+    background-color: #2196F3; /* Set background color (blue) */
+    color: white; /* Set text color to white */
+}
+
+/* Style for 'Les mer' button on hover */
+.read-more:hover {
+    background-color: #45a049; /* Darken background color on hover */
+}
+
+/* Style for 'Kjøp' button on hover */
+.buy:hover {
+    background-color: #1976D2; /* Darken background color on hover */
+}
+
+/* Style for the main content area */
+main {
+    flex: 1; /* Allow main content to grow and take available space in flex column */
+}
+
+/* Style for the footer element */
+footer {
+    text-align: center; /* Center align text within the footer */
+    padding: 2rem; /* Add padding around the footer content */
+    background-color: #333; /* Set a dark background color */
+    color: white; /* Set text color to white */
+    margin-top: 2rem; /* Add top margin */
+}
+
+/* Style for the shoe price span */
+.shoe-price {
+    color: #111; /* Set text color */
+    font-weight: bold; /* Set font weight */
+    margin-left: 1rem; /* Add left margin */
+    align-self: center; /* Align item vertically in flex container */
+    font-size: 1rem; /* Set font size */
+} 
